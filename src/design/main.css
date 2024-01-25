@@ -1,0 +1,34 @@
+/* @import './base.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+  /* 设置竖向滚动条的宽度 */
+  width: 5px;
+  /* 设置横向滚动条的高度 */
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  /* //滑块部分 */
+  border-radius: 3px;
+  background-color: #DBE1EA;
+}
+::-webkit-scrollbar-track {
+  /* //轨道部分 */
+  background-color: #EFF2F6;
+  border-radius: 3px;
+}
+
+
+.text-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scroll-contain-h{
+  height: calc(100vh - 205px);
+  overflow-y: auto;
+}
