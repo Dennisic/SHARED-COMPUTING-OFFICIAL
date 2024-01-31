@@ -2,9 +2,12 @@
 </script>
 
 <template>
-  <div>
-    共享算力官网
-  </div>
+  <a-config-provider>
+    <template #renderEmpty>
+      <!-- <NoDate /> -->
+    </template>
+    <router-view></router-view>
+  </a-config-provider>
 </template>
 
 <style scoped>
